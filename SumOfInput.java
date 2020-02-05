@@ -1,8 +1,9 @@
 /**
- * Write a description of class SumOfInput here.
+ * The purpose of this proram is to return the
+ *sum of all numbers between 1 and n(or the input).
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Giles Bradford
+ * @version 0.0 5-Feb-2020
  */
 public class SumOfInput
 {
@@ -17,10 +18,11 @@ public class SumOfInput
         // initialise instance variables
         sum = 0;
     }
-    
-    public Integer oneToNumber(Integer numberToSum){
 
-        return sum;
+    public Integer oneToNumber(Integer numberToSum) {
+      sum = 0;
+      for (int i = 1; i <= numberToSum; i++) {
+        sum = i + sum;
+      } return sum;
     }
-
-}
+  }
